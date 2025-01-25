@@ -21,6 +21,9 @@
         .content h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
+            font-family: 'Kavoon', sans-serif;
+            color: rgb(16, 199, 227);
+            text-align: center;
         }
         .content p {
             font-size: 1.2rem;
@@ -32,13 +35,14 @@
             margin-right: 1rem;
             border-radius: 5px;
             font-weight: bold;
-            transition: background 0.3s;
+         
         }
        
         .buttons .explore {
             background: transparent;
             color: black;
             border: 2px solid black;
+           
         }
         .buttons .explore:hover {
             background: #e0e0e0;
@@ -49,11 +53,12 @@
             color: black;
             border: 2px solid black;
           
+          
         }
         .buttons .contact:hover {
             background: #e0e0e0;
         }
-       .slide {
+       .slide1 {
             max-width: 40%;
             position: relative;
             margin: auto;
@@ -87,6 +92,7 @@
     max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #F5F5F5;
 }
 
    
@@ -101,7 +107,7 @@
             .content {
                 max-width: 100%;
             }
-            .slide {
+            .slide1 {
                 max-width: 100%;
             }
             .image-section img
@@ -110,7 +116,7 @@
             }
             
         }
-
+       
         @media (max-width: 480px) {
             .content h1 {
                 font-size: 2rem;
@@ -119,8 +125,8 @@
                 font-size: 1rem;
             }
             .buttons a {
-                padding: 0.5rem 1rem;
-                font-size: 0.9rem;
+                padding: 0.5rem 0.5rem;
+                font-size: 0.8rem;
             }
         }
     
@@ -167,73 +173,63 @@
         padding: 20px;
         margin: 20px 0px;
     }
-    .slider {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 80%;
-        overflow: hidden;
-        background: #fff;
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(7.4px);
-        -webkit-backdrop-filter: blur(7.4px);
-        border: 1px solid rgba(255, 255, 255, 0.4);
-        margin: auto;
-    }
+     
+    .div2{
+    display: flex;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+}
+.logo-slider {
+    width: 100%;
+    max-width: 750px; 
+    height: 100px; 
+    overflow: hidden;
+    position: relative;
+    border: 2px solid black;
+    /* box-shadow: 0px -25px 40px -20px #784BA0,
+30px 0px 20px -25px #784BA0,
+0px 25px 20px -20px #784BA0,
+-25px 0px 40px -20px #784BA0; */
 
-    .slider-items {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        animation: scrolling 20s linear infinite;
+    border-radius: 8px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:flex-end;
+    
+    
+  }
+  
+  .slider-track {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    align-items: center;
+   
+   
+  }
+  
+  .slide {
+    flex: 0 0 auto;
+    margin-right: 20px; 
+  }
+  
+  .slide img {
+    height: 85px; 
+    align-items: center;
+    object-fit: contain;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
     }
-
-    @keyframes scrolling {
-        0% {
-            transform: translateX(100%);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
+    100% {
+      transform: translateX(-100%);
     }
-
-    .slider-items img {
-        width: 50%;
-        height: 6rem;
-        margin: 20px;
-        object-fit: contain;
-    }
-
-    .hiring {
-        margin-bottom: 60px;
-        text-align: center;
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
-    @media (max-width: 768px) {
-        .slider {
-            width: 100%;
-        }
-        .slider-items {
-            gap: 10px;
-        }
-        .slider-items img {
-            width: 100%;
-            height: auto; 
-            margin: 10px;
-        }
-        .hiring {
-            font-size: 1.2rem;
-        }
-    }
-
-    .hiring
-    {
-        margin-bottom: 20px;
-    }
+  }
  
 
     .counters {
@@ -289,6 +285,22 @@
     font-size: 0.9rem; 
   }
 }
+
+/* @keyframes color {
+  0%   { background: #33CCCC; }
+  20%  { background: #33CC36; }
+  40%  { background: #B8CC33; }
+  60%  { background: #FCCA00; }
+  80%  { background: #33CC36; }
+  100% { background: #33CCCC; }
+}
+
+main {
+  background: #e2e2e2; 
+  animation: color 9s infinite linear;
+}  */
+
+ 
     </style>
 </head>
 <body>
@@ -321,7 +333,7 @@
                 <li><a href="Career.html">Career</a></li>
                 <li class="nav-item">
                     <a href="Trainning.html">Trainning</a>
-                    <button class="dropdown-toggle">▼</button>
+                    <!-- <button class="dropdown-toggle">▼</button> -->
                     <!-- <div class="dropdown">
                         <a href="Trainning.html#program1">Summary</a>
                         <a href="Trainning.html#modules1">Syllabus</a>
@@ -343,6 +355,7 @@
 
 
     <main>
+        
         <div class="container">
             <div class="content">
                 <h1>Engineering Precision: Redefining BIW Fixture Design</h1>
@@ -352,7 +365,7 @@
                     <a href="contact.html" class="contact">Contact Us</a>
                 </div>
             </div>
-            <div class="slide">
+            <div class="slide1">
                 <div class="image-section">
                     <img src="10.jpg" class="active">
                     <img src="11.jpg">
@@ -390,27 +403,31 @@
         
         </section>
 
-        <section class="hiring">
-
-        <h1 class="network">Our network</h1>
-        <div class="slider">
-            <div class="slider-items">
-                <img src="force-logo.png"
-                    alt="Force motor">
-                <img src="mahindra.png"
-                    alt="machindra">
-                <img src="merce.jpeg"
-                    alt="mercedes">
-                <img src="maruti.png"
-                    alt="maruti suzuki ">
-                <img src="komastu.png"
-                    alt="komastu">
-                <img src="bajaj.jpeg" alt="bajaj">
-                <img src="damaco.png"
-                    alt="damaco">
-                <img src="leanautomation_logo1.png"
-                    alt="lean automation">
-            </section>
+        <div class="div2">
+            <div class="logo-slider">
+              <div class="slider-track">
+                <div class="slide"><img src="COMAU logo.png" alt="Company 1" width="100px" height="100px" ></div>
+                <div class="slide"><img src="force-logo.png" alt="Company 2" width="100px" height="100px" ></div>
+                <div class="slide"><img src="komastu.png" alt="Company 4"width="100px" height="100px" ></div>
+                <div class="slide"><img src="merce.jpeg" alt="Company 5"></div>
+                <div class="slide"><img src="maruti.png" alt="Company 6"></div>
+                <div class="slide"><img src="bajaj.jpeg" width="100px" height="100px" alt="Company 6"></div>
+                <div class="slide"><img src="damaco.png" alt="Company 5"  width="100px" height="100px" ></div>
+                <div class="slide"><img src="tata.png" alt="Company 1" width="100px" height="100px"></div>
+              <div class="slide"><img src="faith_auto.jpeg" alt="Company10" width="100px" height="100px" ></div>
+              <div class="slide"><img src="parc.webp" alt="Company11" width="100px" height="100px" ></div>
+              <div class="slide"><img src="kudale.png" alt="Company12"width="100px" height="100px"></div>
+              <div class="slide"><img src="patil_aut.png" alt="Company13" width="100px" height="100px" ></div>
+              <div class="slide"><img src="faras.png" alt="Comapny14" width="100px" height="100px" ></div>
+              <div class="slide"><img src="zobotic.png" alt="Company15" width="80px" height="80px" ></div>
+              <div class="slide"><img src="arm.jpeg" alt="Company16" width="80px" height="80px" ></div>
+              <div class="slide"><img src="inspirit.jpeg" alt="Comapny14" width="100px" height="100px" ></div>
+              <div class="slide"><img src="sacha.png" alt="Company15" width="80px" height="80px" ></div>
+              <div class="slide"><img src="glori.jpeg" alt="Company16" width="80px" height="80px" ></div>
+              
+              </div>
+            </div>
+          </div>
 
             <div class="counters">
                 <div class="counter-card">
@@ -437,6 +454,7 @@
         </div>
     </div>
     </div>
+    
 </main>
 <script>
     function toggleAbout() {
@@ -508,6 +526,9 @@
     }
 
     document.addEventListener('DOMContentLoaded', counterAnimation);
+
+
+    
 </script>
         
      <script src="script.js"></script>
