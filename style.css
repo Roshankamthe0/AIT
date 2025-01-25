@@ -14,14 +14,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.855);
     padding: 20px 30px;
     position: relative;
     z-index: 1000; 
     /* position: sticky;
     top: 0; */
+    background: #00C9FF;  
+    background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF); 
+    background: linear-gradient(to right, #92FE9D, #00C9FF); 
+    
     
 }
+
+
 /* .navbar {
     display: flex;
     justify-content: space-between;
