@@ -115,6 +115,7 @@
       flex-direction: column;
       justify-content: end;
       align-items: self-start;
+      border: 3px solid black;
     }
 
     .swiper-slide h2 {
@@ -161,17 +162,18 @@
       display: block;
       opacity: 1;
     }
+    
 
     .swiper-slide--one {
       background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-        url("biw\ fixture\ design.webp")
+        url("2.jpg")
           no-repeat 50% 50% / cover;
 
     }
 
     .swiper-slide--two {
       background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-        url("biw\ product\ design.webp")
+        url("P01.jpg")
           no-repeat 50% 50% / cover;
     }
 
@@ -226,8 +228,10 @@
     }
    
 .slider-controls {
+  display: flex;
   text-align: center; 
   margin-top: 10px;   
+  justify-content: space-around;
 }
 
 .prev-slide, .next-slide {
@@ -254,7 +258,18 @@
         width: 85%;
       }
     }
-   
+    /* .image-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(0%, -50%);
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.916);
+            background: rgba(0, 0, 0, 0.0881);
+            padding: 10px 20px;
+            border-radius: 10px;
+        } */
+
    </style>
 </head>
 <body>
@@ -287,15 +302,14 @@
                 <li><a href="Career.html">Career</a></li>
                 <li class="nav-item">
                     <a href="Trainning.html">Trainning</a>
-                    <button class="dropdown-toggle">▼</button>
+                    <!-- <button class="dropdown-toggle">▼</button>
                     <div class="dropdown">
                         <a href="Trainning.html#program1">Summary</a>
                         <a href="Trainning.html#modules1">Syllabus</a>
                         <a href="Trainning.html#projects1">Projects</a>
-                        <!-- <a href="#">Instructor</a>
-                        <a href="#">FAQs</a> -->
+            
                         <a href="Trainning.html#contact1">Query</a>
-                    </div>
+                    </div> -->
                 </li>
                 <li><a href="contact.html">Contact us</a></li>
                 <li><a href="feedback.html">Feedback</a></li>
@@ -312,6 +326,7 @@
 
         <body>
             <main>
+              
               <div>
                 <span>Our</span>
                 <h1>Services</h1>
@@ -321,16 +336,17 @@
               <div class="swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide swiper-slide--one">
-                    <div>
+                    <div class="image-text">
                       <h2>BIW Fixture Design</h2>
-                      <p>We specialize in designing robust and efficient BIW (Body-in-White) fixtures to ensure precise assembly and production processes.</p>
+                      <!-- <p>We specialize in designing robust and efficient BIW (Body-in-White) fixtures to ensure precise assembly and production processes.</p> -->
                       <a href="moreinfo.html#mservice1" class="btn" onclick="toggleservice1()">SEE MORE</a> 
                     </div>
                   </div>
                   <div class="swiper-slide swiper-slide--two">
-                    <div>
+                    <div class="image-text">
+
                       <h2>BIW Product Design</h2>
-                      <p>Our team provides end-to-end BIW product design solutions to meet the structural and functional requirements of automotive bodies.</p>
+                      <!-- <p>Our team provides end-to-end BIW product design solutions to meet the structural and functional requirements of automotive bodies.</p> -->
                       <a href="moreinfo.html#mservice2" class="btn" onclick="toggleservice2()">SEE MORE</a>
                     </div>
                   </div>
@@ -338,7 +354,7 @@
                   <div class="swiper-slide swiper-slide--three">
                     <div>
                       <h2>Simulation</h2>
-                      <p>Advanced simulation techniques using Process Simulate and Dalmia software to optimize manufacturing processes and identify potential improvements.</p>
+                      <!-- <p>Advanced simulation techniques using Process Simulate and Dalmia software to optimize manufacturing processes and identify potential improvements.</p> -->
                       <a href="moreinfo.html#mservice3" class="btn" onclick="toggleservice3()">SEE MORE</a>
                     </div>
                   </div>
@@ -346,7 +362,7 @@
                   <div class="swiper-slide swiper-slide--four">
                     <div>
                       <h2>Special Purpose Machines</h2>
-                      <p>Custom-designed SPMs tailored to specific manufacturing needs, enhancing productivity and automation.</p>
+                      <!-- <p>Custom-designed SPMs tailored to specific manufacturing needs, enhancing productivity and automation.</p> -->
                       <a href="moreinfo.html#mservice4" class="btn" onclick="toggleservice4()">SEE MORE</a>
                     </div>
                   </div>
@@ -354,7 +370,7 @@
                   <div class="swiper-slide swiper-slide--five">
                     <div>
                       <h2>Manufacturing Engineering</h2>
-                      <p>Providing expertise in optimizing production lines, reducing costs, and improving overall manufacturing efficiency.</p>
+                      <!-- <p>Providing expertise in optimizing production lines, reducing costs, and improving overall manufacturing efficiency.</p> -->
                       <a href="moreinfo.html#mservice5" class="btn" onclick="toggleservice5()">SEE MORE</a>
                     </div>
                   </div>
@@ -362,14 +378,14 @@
                   <div class="swiper-slide swiper-slide--six">
                     <div>
                       <h2>R&D Services</h2>
-                      <p>Research and development services aimed at innovation, new product development, and process improvements.</p>
+                      <!-- <p>Research and development services aimed at innovation, new product development, and process improvements.</p> -->
                       <a href="moreinfo.html#mservice6" class="btn" onclick="toggleservice6()">SEE MORE</a>
                     </div>
                   </div>
                   <div class="swiper-slide swiper-slide--seven">
                     <div>
                       <h2>Turn-Key Production System</h2>
-                      <p>We deliver complete, ready-to-operate production systems, ensuring seamless integration from design to deployment.</p>
+                      <!-- <p>We deliver complete, ready-to-operate production systems, ensuring seamless integration from design to deployment.</p> -->
                       <a href="moreinfo.html#mservice7" class="btn" onclick="toggleservice7()">SEE MORE</a>
                     </div>
                   </div>
@@ -377,7 +393,7 @@
                   <div class="swiper-slide swiper-slide--eight">
                     <div>
                       <h2>Reverse Engineering</h2>
-                      <p>Our reverse engineering services help in analyzing and recreating existing products for improvement or duplication.</p>
+                      <!-- <p>Our reverse engineering services help in analyzing and recreating existing products for improvement or duplication.</p> -->
                       <a href="moreinfo.html#mservice8" class="btn" onclick="toggleservice8()">SEE MORE</a>
                     </div>
                   </div>
@@ -385,15 +401,15 @@
                   <div class="swiper-slide swiper-slide--nine">
                     <div>
                       <h2>Staffing and Recruiting</h2>
-                      <p>We provide recruitment solutions to help businesses find the right talent for engineering and technical roles.</p>
+                      <!-- <p>We provide recruitment solutions to help businesses find the right talent for engineering and technical roles.</p> -->
                       <a href="moreinfo.html#mservice9" class="btn" onclick="toggleservice9()">SEE MORE</a>
                     </div>
                   </div>
                  
                 </div>
                 <div class="slider-controls">
-                  <button class="prev-slide">Previous Slide</button>
-                  <button class="next-slide">Next Slide</button>
+                  <button class="prev-slide"><</button>
+                  <button class="next-slide">></button>
                 </div>
         
                 
