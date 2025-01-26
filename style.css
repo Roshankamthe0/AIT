@@ -7,7 +7,9 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 16px"Varela Round", sans-serif;
+            background-color: #f4f4f4; 
+            color: #333;
 }
 
 .navbar {
@@ -19,15 +21,14 @@ body {
     z-index: 1000; 
     /* position: sticky;
     top: 0; */
-    background: #00C9FF;  
-    background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF); 
-    background: linear-gradient(to right, #92FE9D, #00C9FF); 
+   
+    background-color: #004d7f;
     
     
 }
 
 
-/* .navbar {
+ /* .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +40,7 @@ body {
     right: 0;
     z-index: 1000; 
     width: 100%;
-} */
+}  */
 .navbar .logo a {
     color: #fff;
     font-size: 24px;
@@ -93,7 +94,7 @@ body {
 .dropdown {
     display: none;
     position: absolute;
-    background-color: #333;
+    background-color:#004d7f;
     padding: 1rem;
     list-style-type: none;
     flex-direction: column;
@@ -185,4 +186,20 @@ body {
     .nav-item:hover .dropdown {
         display: none; 
     }
+}
+
+.footer1
+{
+    padding: 21px 20px;
+    border: none;   
+    background-color: #004d7f;
+    /* background-color: #333; */
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+
+}
+main,body
+{
+    font-family: 'Varela Round', sans-serif;
 }
