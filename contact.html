@@ -38,15 +38,13 @@
                 <li><a href="Career.html">Career</a></li>
                 <li class="nav-item">
                     <a href="Trainning.html">Trainning</a>
-                    <button class="dropdown-toggle">▼</button>
-                    <div class="dropdown">
+                    <!-- <button class="dropdown-toggle">▼</button> -->
+                    <!-- <div class="dropdown">
                       <a href="#program1">Summary</a>
                       <a href="#modules1">Syllabus</a>
                       <a href="#projects1">Projects</a>
-                      <!-- <a href="#">Instructor</a>
-                      <a href="#">FAQs</a> -->
                       <a href="#contact1">Query</a>
-                  </div>
+                  </div> -->
                 </li>
                 <li><a href="contact.html">Contact us</a></li>
                 <li><a href="feedback.html">Feedback</a></li>
@@ -66,16 +64,15 @@
                 <h1>Get In Touch</h1>
                 <p>We are here for you! How can we help?</p>
                 <form id="contact-form">
+                  <span class="error-message">Name</span>
                   <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                  <span class="error-message">Please enter your name</span>
-          
+                  <span class="error-message">Email</span>
                   <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                  <span class="error-message">Please enter a valid email</span>
-                  <input type="mobile" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
-                  <span class="error-message">Please enter a valid number</span>
-          
+                  <span class="error-message">Mobile number</span>
+                  <input type="mobile" id="mobile" name="mobile" placeholder="Enter your mobile number" required>                
+                  <span class="error-message"> Your message</span>
                   <textarea id="message" name="message" placeholder="Enter your message..." required></textarea>
-                  <span class="error-message">Please enter your message</span>
+                  
           
                   <button type="submit">Submit</button>
                 </form>
@@ -83,7 +80,7 @@
           
               <div class="info-container">
                 <div class="gif1">
-                <img src="contact-us.gif" alt="Contact_Us">
+                <img src="images/contact-us.gif" alt="Contact_Us">
               </div>
                 <div class="info">
                     
@@ -106,6 +103,15 @@
           
         
     </main>
+    <footer>
+      <div class="footer1">
+          <pre>
+    
+            Copyright &copy AI Technologies 2025 All right reserved
+            aitdesigns69@gmail.com
+            +91 7058897873
+      </div>       
+    </footer>
     <script>
         
   document.addEventListener("DOMContentLoaded", function() {
@@ -122,4 +128,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
