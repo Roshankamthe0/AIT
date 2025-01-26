@@ -5,7 +5,10 @@
     text-align: justify;
 
 }
-
+html,body
+{
+    overflow-x:hidden;
+}
 body {
     font-family: 16px"Varela Round", sans-serif;
             background-color: #f4f4f4; 
